@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis 18 Años - Fátima</title>
+
+    <!-- Estas etiquetas aseguran que WhatsApp muestre la portada cuadrada al enviar el link -->
+    <meta property="og:title" content="Mis 18 Años - Fátima">
+    <meta property="og:description" content="Estás invitado a celebrar este momento tan especial. Presiona para ver la invitación interactiva con música.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/DISENO-Perzonaliza-y-Crea/Mis-18-FATIMA/main/portadas%2018%20fatima.jpg">
+    <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/DISENO-Perzonaliza-y-Crea/Mis-18-FATIMA/main/portadas%2018%20fatima.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="600">
+    <meta property="og:url" content="https://diseno-perzonaliza-y-crea.github.io/Mis-18-FATIMA/">
+    <meta property="og:type" content="website">
+
     <!-- Tailwind CSS para diseño fluido y estilizado -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts elegantes: Playfair Display, Montserrat y Cinzel -->
+    <!-- Google Fonts elegantes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;500;600;700&family=Cinzel:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <!-- FontAwesome para íconos interactivos de ubicación y WhatsApp -->
+    <!-- FontAwesome para íconos interactivos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script>
@@ -28,7 +40,7 @@
                             600: '#415d8d',
                             700: '#354b73',
                             800: '#2d3f60',
-                            900: '#0B1B3D', // Azul marino profundo y elegante
+                            900: '#0B1B3D', // Azul marino profundo
                             950: '#050c1e',
                         },
                         gold: {
@@ -117,18 +129,19 @@
 <!-- CONTENEDOR PRINCIPAL DE LA INVITACIÓN -->
 <div class="max-w-xl mx-auto px-4 pt-6 pb-24 flex flex-col items-center justify-center gap-8 relative z-10">
     
-    <!-- PÁGINA 1: Portada de la invitación -->
+    <!-- PÁGINA 1: Imagen Principal de la Invitación (Cumple0.png) -->
     <div class="w-full relative group border border-gold-500/20 rounded-2xl overflow-hidden shadow-2xl bg-navy-900">
         <div class="absolute inset-0 bg-gradient-to-t from-navy-950/40 to-transparent pointer-events-none z-10"></div>
         <img 
             id="invitation-p1" 
-            src="portadas%2018%20fatima.jpg" 
-            alt="Fátima 18 Años - Portada de Invitación" 
+            src="Cumple0.png" 
+            alt="Fátima 18 Años - Página 1" 
             class="w-full h-auto object-cover select-none transition-transform duration-500"
-            onerror="tryAlternativePortadas(this)"
+            onerror="tryAlternativeCumple0(this)"
         >
     </div>
 
+    <!-- CUENTA REGRESIVA: Colocada en medio de ambas páginas -->
     <section class="w-full border-2 border-gold-500/40 bg-gradient-to-b from-navy-900 to-navy-950 rounded-2xl p-6 shadow-2xl relative overflow-hidden text-center">
         <!-- Decoraciones clásicas en las esquinas de la cuenta regresiva -->
         <div class="absolute top-0 left-0 w-6 h-6 border-t border-l border-gold-500/50"></div>
@@ -162,7 +175,7 @@
         </div>
     </section>
 
-    <!-- PÁGINA 2: Croquis y confirmación -->
+    <!-- PÁGINA 2: Croquis y confirmación (Cumple (01).png) con botones posicionados milimétricamente -->
     <div class="w-full flex flex-col items-center gap-2">
         <div id="p2-wrapper" class="w-full relative border border-gold-500/30 rounded-2xl overflow-hidden shadow-2xl bg-navy-900 select-none">
             <!-- Imagen de fondo de la página 2 -->
@@ -215,29 +228,26 @@
 
 <script>
     // Variables para controlar los intentos de carga de imágenes (Fallback)
-    let portadaAttempts = 0;
+    let cumple0Attempts = 0;
     let cumpleAttempts = 0;
 
-    // Función inteligente de recuperación para la portada (pág 1)
-    function tryAlternativePortadas(img) {
-        portadaAttempts++;
-        console.log("Error al cargar la portada principal. Intentando alternativa #" + portadaAttempts);
+    // Función inteligente de recuperación para la página 1 (Cumple0.png)
+    function tryAlternativeCumple0(img) {
+        cumple0Attempts++;
+        console.log("Error al cargar la Página 1. Intentando alternativa #" + cumple0Attempts);
         
-        if (portadaAttempts === 1) {
-            // Intentar con mayúscula en el formato del archivo ya que GitHub distingue mayúsculas/minúsculas
-            img.src = "portadas%2018%20fatima.JPG";
-        } else if (portadaAttempts === 2) {
-            // Intentar con el enlace directo crudo de tu repositorio en GitHub (con minúscula)
-            img.src = "https://raw.githubusercontent.com/DISENO-Perzonaliza-y-Crea/Mis-18-FATIMA/main/portadas%2018%20fatima.jpg";
-        } else if (portadaAttempts === 3) {
-            // Intentar con el enlace directo crudo de tu repositorio en GitHub (con JPG en mayúscula)
-            img.src = "https://raw.githubusercontent.com/DISENO-Perzonaliza-y-Crea/Mis-18-FATIMA/main/portadas%2018%20fatima.JPG";
-        } else if (portadaAttempts === 4) {
-            // Intentar con espacio crudo en lugar de URL encoded %20
-            img.src = "portadas 18 fatima.jpg";
-        } else if (portadaAttempts === 5) {
-            // Si todo falla, cargar un placeholder bonito con el título para que la web siga siendo operativa
-            img.src = "https://placehold.co/600x600/0B1B3D/FFFFFF?text=FÁTIMA+PORTADA";
+        if (cumple0Attempts === 1) {
+            // Intentar con la ruta directa del repositorio de Github del usuario
+            img.src = "https://raw.githubusercontent.com/DISENO-Perzonaliza-y-Crea/Mis-18-FATIMA/main/Cumple0.png";
+        } else if (cumple0Attempts === 2) {
+            // Intentar con la ruta directa del repositorio de origen original de respaldo
+            img.src = "https://raw.githubusercontent.com/lupitacontrerasruiz-lang/Mis-18-FATIMA/main/Cumple0.png";
+        } else if (cumple0Attempts === 3) {
+            // Probar en mayúscula por si acaso
+            img.src = "Cumple0.PNG";
+        } else if (cumple0Attempts === 4) {
+            // Si todo falla, cargar un placeholder elegante
+            img.src = "https://placehold.co/600x600/0B1B3D/FFFFFF?text=FÁTIMA+PÁGINA+1";
         }
     }
 
@@ -247,16 +257,14 @@
         console.log("Error al cargar la página 2. Intentando alternativa #" + cumpleAttempts);
 
         if (cumpleAttempts === 1) {
-            // Intentar con el enlace crudo directo de GitHub (con minúscula)
-            img.src = "https://raw.githubusercontent.com/DISENO-Perzonaliza-y-Crea/Mis-18-FATIMA/main/Cumple%20(01).png";
+            img.src = "Cumple%20(01).png";
         } else if (cumpleAttempts === 2) {
-            // Intentar con el enlace crudo directo de GitHub (con PNG en mayúscula)
-            img.src = "https://raw.githubusercontent.com/DISENO-Perzonaliza-y-Crea/Mis-18-FATIMA/main/Cumple%20(01).PNG";
+            // Intentar con el enlace crudo directo de GitHub del nuevo usuario
+            img.src = "https://raw.githubusercontent.com/DISENO-Perzonaliza-y-Crea/Mis-18-FATIMA/main/Cumple%20(01).png";
         } else if (cumpleAttempts === 3) {
-            // Intentar sin codificación URL en el espacio
-            img.src = "Cumple (01).png";
+            // Intentar con el enlace crudo directo de GitHub del usuario alternativo
+            img.src = "https://raw.githubusercontent.com/lupitacontrerasruiz-lang/Mis-18-FATIMA/main/Cumple%20(01).png";
         } else if (cumpleAttempts === 4) {
-            // Placeholder de auxilio
             img.src = "https://placehold.co/600x800/0B1B3D/FFFFFF?text=FÁTIMA+PÁGINA+2";
         }
     }
