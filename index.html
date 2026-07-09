@@ -78,7 +78,6 @@
 </head>
 <body class="bg-navy-950 text-white font-sans min-h-screen relative overflow-x-hidden selection:bg-gold-500 selection:text-navy-950">
 
-<!-- Overlay de Entrada (Bypass de Autoplay de Audio) -->
 <div id="entrance-overlay" class="fixed inset-0 bg-navy-950 z-50 flex flex-col items-center justify-center p-6 text-center transition-opacity duration-1000">
     <div class="max-w-md w-full border border-gold-500/30 bg-navy-900/80 backdrop-blur-md rounded-2xl p-8 shadow-2xl relative overflow-hidden">
         <!-- Gold luxury corners -->
@@ -100,9 +99,8 @@
     </div>
 </div>
 
-<!-- Audio Source (Aitana - Superestrella from Repository) -->
 <audio id="bg-music" loop>
-    <source src="https://raw.githubusercontent.com/lupitacontrerasruiz-lang/Mis-18-FATIMA/main/ytmp3free.cc_aitana-superestrella-youtubemp3free.org.mp3" type="audio/mp3">
+    <source src="https://raw.githubusercontent.com/DISENO-Perzonaliza-y-Crea/Mis-18-FATIMA/main/ytmp3free.cc_aitana-superestrella-youtubemp3free.org.mp3" type="audio/mp3">
     Tu navegador no soporta el elemento de audio.
 </audio>
 
@@ -120,19 +118,17 @@
 <!-- MAIN WEBSITE CONTAINER -->
 <div class="max-w-xl mx-auto px-4 pt-6 pb-24 flex flex-col items-center justify-center gap-8 relative z-10">
     
-    <!-- PAGE 1: Cumple0.png (Clean page layout) -->
     <div class="w-full relative group border border-gold-500/20 rounded-2xl overflow-hidden shadow-2xl bg-navy-900">
-        <div class="absolute inset-0 bg-gradient-to-t from-navy-950/60 to-transparent pointer-events-none z-10"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-navy-950/40 to-transparent pointer-events-none z-10"></div>
         <img 
             id="invitation-p1" 
-            src="https://raw.githubusercontent.com/lupitacontrerasruiz-lang/Mis-18-FATIMA/main/Cumple0.png" 
-            alt="Fátima 18 Años - Página 1" 
+            src="portadas 18 fatima.jpg" 
+            alt="Fátima 18 Años - Portada" 
             class="w-full h-auto object-cover select-none transition-transform duration-500"
-            onerror="this.onerror=null; this.src='https://placehold.co/600x800/0B1B3D/FFFFFF?text=FÁTIMA+CUMPLE+PÁGINA+1';"
+            onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/DISENO-Perzonaliza-y-Crea/Mis-18-FATIMA/main/portadas%2018%20fatima.jpg'; this.onerror=function(){this.src='https://raw.githubusercontent.com/DISENO-Perzonaliza-y-Crea/Mis-18-FATIMA/main/Cumple0.png'};"
         >
     </div>
 
-    <!-- COUNTDOWN WIDGET: Positioned exactly between Page 1 and Page 2 -->
     <section class="w-full border-2 border-gold-500/40 bg-gradient-to-b from-navy-900 to-navy-950 rounded-2xl p-6 shadow-2xl relative overflow-hidden text-center">
         <!-- Corner decorations -->
         <div class="absolute top-0 left-0 w-6 h-6 border-t border-l border-gold-500/50"></div>
@@ -166,16 +162,15 @@
         </div>
     </section>
 
-    <!-- PAGE 2: Cumple (01).png with Custom Navy Blue / Gold Buttons fixed over target stars -->
     <div class="w-full flex flex-col items-center gap-2">
         <div id="p2-wrapper" class="w-full relative border border-gold-500/30 rounded-2xl overflow-hidden shadow-2xl bg-navy-900 select-none">
             <!-- Background Image -->
             <img 
                 id="invitation-p2" 
-                src="https://raw.githubusercontent.com/lupitacontrerasruiz-lang/Mis-18-FATIMA/main/Cumple%20(01).png" 
+                src="Cumple (01).png" 
                 alt="Fátima 18 Años - Página 2" 
                 class="w-full h-auto object-cover select-none pointer-events-none"
-                onerror="this.onerror=null; this.src='https://placehold.co/600x800/0B1B3D/FFFFFF?text=FÁTIMA+CUMPLE+PÁGINA+2';"
+                onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/DISENO-Perzonaliza-y-Crea/Mis-18-FATIMA/main/Cumple%20(01).png'; this.onerror=function(){this.src='https://placehold.co/600x800/0B1B3D/FFFFFF?text=FÁTIMA+CUMPLE+PÁGINA+2'};"
             >
             
             <!-- BUTTON 1: UBICACIÓN (Fitted at X: 56.4%, Y: 62.7% over the red star) -->
@@ -183,7 +178,7 @@
                 href="https://maps.app.goo.gl/TSp4USqkrjmYEe5W8" 
                 target="_blank" 
                 id="btn-location" 
-                class="absolute cursor-pointer bg-navy-900 hover:bg-navy-850 text-white font-sans text-xs md:text-sm font-bold uppercase tracking-wider py-2.5 px-6 rounded-full border-2 border-gold-500 shadow-2xl flex items-center gap-2 select-none pulse-gold-btn transition-colors pointer-events-auto transform -translate-x-1/2 -translate-y-1/2"
+                class="absolute cursor-pointer bg-navy-900 hover:bg-navy-800 text-white font-sans text-[11px] md:text-sm font-bold uppercase tracking-wider py-2.5 px-6 rounded-full border-2 border-gold-500 shadow-2xl flex items-center gap-2 select-none pulse-gold-btn transition-colors pointer-events-auto transform -translate-x-1/2 -translate-y-1/2"
                 style="left: 56.4%; top: 62.7%; font-family: 'Montserrat', sans-serif;"
             >
                 <i class="fa-solid fa-map-location-dot text-gold-400"></i>
@@ -195,7 +190,7 @@
                 href="https://w.app/mis18fatima" 
                 target="_blank" 
                 id="btn-confirm" 
-                class="absolute cursor-pointer bg-navy-900 hover:bg-navy-850 text-white font-sans text-xs md:text-sm font-bold uppercase tracking-wider py-2.5 px-6 rounded-full border-2 border-gold-500 shadow-2xl flex items-center gap-2 select-none pulse-gold-btn transition-colors pointer-events-auto transform -translate-x-1/2 -translate-y-1/2"
+                class="absolute cursor-pointer bg-navy-900 hover:bg-navy-800 text-white font-sans text-[11px] md:text-sm font-bold uppercase tracking-wider py-2.5 px-6 rounded-full border-2 border-gold-500 shadow-2xl flex items-center gap-2 select-none pulse-gold-btn transition-colors pointer-events-auto transform -translate-x-1/2 -translate-y-1/2"
                 style="left: 66.2%; top: 90.4%; font-family: 'Montserrat', sans-serif;"
             >
                 <i class="fa-brands fa-whatsapp text-green-400"></i>
