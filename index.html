@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis 18 Años - Fátima</title>
-    <!-- Tailwind CSS -->
+    <!-- Tailwind CSS para diseño fluido y estilizado -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
+    <!-- Google Fonts elegantes: Playfair Display, Montserrat y Cinzel -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;500;600;700&family=Cinzel:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <!-- FontAwesome Icons -->
+    <!-- FontAwesome para íconos interactivos de ubicación y WhatsApp -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script>
@@ -28,7 +28,7 @@
                             600: '#415d8d',
                             700: '#354b73',
                             800: '#2d3f60',
-                            900: '#0B1B3D', // Elegant Deep Navy Blue
+                            900: '#0B1B3D', // Azul marino profundo y elegante
                             950: '#050c1e',
                         },
                         gold: {
@@ -37,7 +37,7 @@
                             200: '#ebda99',
                             300: '#dec260',
                             400: '#d2a833',
-                            500: '#C59024', // Luxury Gold accent
+                            500: '#C59024', // Oro brillante metálico
                             600: '#aa731c',
                             700: '#865419',
                             800: '#71441a',
@@ -54,7 +54,6 @@
         }
     </script>
     <style>
-        /* Custom scrollbar matching deep navy & gold theme */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -66,7 +65,7 @@
             border-radius: 4px;
         }
         
-        /* Sparkle pulse animations for elegant buttons */
+        /* Animación premium de resplandor áureo para los botones interactivos */
         @keyframes pulse-gold {
             0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.95; box-shadow: 0 0 10px rgba(197, 144, 36, 0.4); }
             50% { transform: translate(-50%, -50%) scale(1.04); opacity: 1; box-shadow: 0 0 22px rgba(197, 144, 36, 0.8); }
@@ -80,7 +79,7 @@
 
 <div id="entrance-overlay" class="fixed inset-0 bg-navy-950 z-50 flex flex-col items-center justify-center p-6 text-center transition-opacity duration-1000">
     <div class="max-w-md w-full border border-gold-500/30 bg-navy-900/80 backdrop-blur-md rounded-2xl p-8 shadow-2xl relative overflow-hidden">
-        <!-- Gold luxury corners -->
+        <!-- Esquinas doradas de estilo invitación de gala -->
         <div class="absolute top-2 left-2 w-8 h-8 border-t-2 border-l-2 border-gold-500"></div>
         <div class="absolute top-2 right-2 w-8 h-8 border-t-2 border-r-2 border-gold-500"></div>
         <div class="absolute bottom-2 left-2 w-8 h-8 border-b-2 border-l-2 border-gold-500"></div>
@@ -104,7 +103,7 @@
     Tu navegador no soporta el elemento de audio.
 </audio>
 
-<!-- Floating Music Widget -->
+<!-- Widget flotante del reproductor de música -->
 <div id="music-widget" class="fixed bottom-6 right-6 z-40 bg-navy-900/90 border border-gold-500/40 rounded-full p-2 pl-4 pr-3 flex items-center gap-3 shadow-2xl backdrop-blur-md hidden transition-all duration-300 transform hover:scale-102">
     <div class="flex flex-col text-left">
         <span class="text-[10px] text-gold-500 tracking-wider font-semibold uppercase">Reproduciendo</span>
@@ -115,22 +114,23 @@
     </button>
 </div>
 
-<!-- MAIN WEBSITE CONTAINER -->
+<!-- CONTENEDOR PRINCIPAL DE LA INVITACIÓN -->
 <div class="max-w-xl mx-auto px-4 pt-6 pb-24 flex flex-col items-center justify-center gap-8 relative z-10">
     
+    <!-- PÁGINA 1: Portada de la invitación -->
     <div class="w-full relative group border border-gold-500/20 rounded-2xl overflow-hidden shadow-2xl bg-navy-900">
         <div class="absolute inset-0 bg-gradient-to-t from-navy-950/40 to-transparent pointer-events-none z-10"></div>
         <img 
             id="invitation-p1" 
-            src="portadas 18 fatima.jpg" 
-            alt="Fátima 18 Años - Portada" 
+            src="portadas%2018%20fatima.jpg" 
+            alt="Fátima 18 Años - Portada de Invitación" 
             class="w-full h-auto object-cover select-none transition-transform duration-500"
-            onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/DISENO-Perzonaliza-y-Crea/Mis-18-FATIMA/main/portadas%2018%20fatima.jpg'; this.onerror=function(){this.src='https://raw.githubusercontent.com/DISENO-Perzonaliza-y-Crea/Mis-18-FATIMA/main/Cumple0.png'};"
+            onerror="tryAlternativePortadas(this)"
         >
     </div>
 
     <section class="w-full border-2 border-gold-500/40 bg-gradient-to-b from-navy-900 to-navy-950 rounded-2xl p-6 shadow-2xl relative overflow-hidden text-center">
-        <!-- Corner decorations -->
+        <!-- Decoraciones clásicas en las esquinas de la cuenta regresiva -->
         <div class="absolute top-0 left-0 w-6 h-6 border-t border-l border-gold-500/50"></div>
         <div class="absolute top-0 right-0 w-6 h-6 border-t border-r border-gold-500/50"></div>
         <div class="absolute bottom-0 left-0 w-6 h-6 border-b border-l border-gold-500/50"></div>
@@ -139,22 +139,22 @@
         <h3 class="text-gold-500 font-cinzel text-xs tracking-[0.2em] uppercase mb-4">La Gran Fiesta Comienza En:</h3>
         
         <div class="grid grid-cols-4 gap-2 md:gap-4 max-w-sm mx-auto">
-            <!-- Days -->
+            <!-- Días -->
             <div class="bg-navy-950/80 border border-gold-500/20 rounded-xl p-3 shadow-inner">
                 <span id="timer-days" class="font-cinzel text-3xl font-extrabold text-white block font-mono">00</span>
                 <span class="text-[9px] uppercase tracking-widest text-gold-400 font-medium mt-1 block">Días</span>
             </div>
-            <!-- Hours -->
+            <!-- Horas -->
             <div class="bg-navy-950/80 border border-gold-500/20 rounded-xl p-3 shadow-inner">
                 <span id="timer-hours" class="font-cinzel text-3xl font-extrabold text-white block font-mono">00</span>
                 <span class="text-[9px] uppercase tracking-widest text-gold-400 font-medium mt-1 block">Horas</span>
             </div>
-            <!-- Minutes -->
+            <!-- Minutos -->
             <div class="bg-navy-950/80 border border-gold-500/20 rounded-xl p-3 shadow-inner">
                 <span id="timer-minutes" class="font-cinzel text-3xl font-extrabold text-white block font-mono">00</span>
                 <span class="text-[9px] uppercase tracking-widest text-gold-400 font-medium mt-1 block">Min</span>
             </div>
-            <!-- Seconds -->
+            <!-- Segundos -->
             <div class="bg-navy-950/80 border border-gold-500/20 rounded-xl p-3 shadow-inner">
                 <span id="timer-seconds" class="font-cinzel text-3xl font-extrabold text-gold-500 block animate-pulse font-mono">00</span>
                 <span class="text-[9px] uppercase tracking-widest text-gold-400 font-medium mt-1 block">Seg</span>
@@ -162,35 +162,36 @@
         </div>
     </section>
 
+    <!-- PÁGINA 2: Croquis y confirmación -->
     <div class="w-full flex flex-col items-center gap-2">
         <div id="p2-wrapper" class="w-full relative border border-gold-500/30 rounded-2xl overflow-hidden shadow-2xl bg-navy-900 select-none">
-            <!-- Background Image -->
+            <!-- Imagen de fondo de la página 2 -->
             <img 
                 id="invitation-p2" 
-                src="Cumple (01).png" 
+                src="Cumple%20(01).png" 
                 alt="Fátima 18 Años - Página 2" 
                 class="w-full h-auto object-cover select-none pointer-events-none"
-                onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/DISENO-Perzonaliza-y-Crea/Mis-18-FATIMA/main/Cumple%20(01).png'; this.onerror=function(){this.src='https://placehold.co/600x800/0B1B3D/FFFFFF?text=FÁTIMA+CUMPLE+PÁGINA+2'};"
+                onerror="tryAlternativeCumple(this)"
             >
             
-            <!-- BUTTON 1: UBICACIÓN (Fitted at X: 56.4%, Y: 62.7% over the red star) -->
+            <!-- BOTÓN 1: UBICACIÓN (Fijado exactamente en X: 56.4%, Y: 62.7% sobre la estrella roja) -->
             <a 
                 href="https://maps.app.goo.gl/TSp4USqkrjmYEe5W8" 
                 target="_blank" 
                 id="btn-location" 
-                class="absolute cursor-pointer bg-navy-900 hover:bg-navy-800 text-white font-sans text-[11px] md:text-sm font-bold uppercase tracking-wider py-2.5 px-6 rounded-full border-2 border-gold-500 shadow-2xl flex items-center gap-2 select-none pulse-gold-btn transition-colors pointer-events-auto transform -translate-x-1/2 -translate-y-1/2"
+                class="absolute cursor-pointer bg-navy-900 hover:bg-navy-850 text-white font-sans text-xs md:text-sm font-bold uppercase tracking-wider py-2.5 px-6 rounded-full border-2 border-gold-500 shadow-2xl flex items-center gap-2 select-none pulse-gold-btn transition-colors pointer-events-auto transform -translate-x-1/2 -translate-y-1/2"
                 style="left: 56.4%; top: 62.7%; font-family: 'Montserrat', sans-serif;"
             >
                 <i class="fa-solid fa-map-location-dot text-gold-400"></i>
                 <span>Ubicación</span>
             </a>
 
-            <!-- BUTTON 2: CONFIRMACIÓN DE ASISTENCIA (Fitted at X: 66.2%, Y: 90.4% over the green star) -->
+            <!-- BOTÓN 2: CONFIRMACIÓN DE ASISTENCIA (Fijado exactamente en X: 66.2%, Y: 90.4% sobre la estrella verde) -->
             <a 
                 href="https://w.app/mis18fatima" 
                 target="_blank" 
                 id="btn-confirm" 
-                class="absolute cursor-pointer bg-navy-900 hover:bg-navy-800 text-white font-sans text-[11px] md:text-sm font-bold uppercase tracking-wider py-2.5 px-6 rounded-full border-2 border-gold-500 shadow-2xl flex items-center gap-2 select-none pulse-gold-btn transition-colors pointer-events-auto transform -translate-x-1/2 -translate-y-1/2"
+                class="absolute cursor-pointer bg-navy-900 hover:bg-navy-850 text-white font-sans text-xs md:text-sm font-bold uppercase tracking-wider py-2.5 px-6 rounded-full border-2 border-gold-500 shadow-2xl flex items-center gap-2 select-none pulse-gold-btn transition-colors pointer-events-auto transform -translate-x-1/2 -translate-y-1/2"
                 style="left: 66.2%; top: 90.4%; font-family: 'Montserrat', sans-serif;"
             >
                 <i class="fa-brands fa-whatsapp text-green-400"></i>
@@ -199,7 +200,7 @@
         </div>
     </div>
 
-    <!-- Footer -->
+    <!-- Pie de página elegante -->
     <footer class="w-full text-center py-6 mt-4 border-t border-gold-500/10 space-y-3">
         <p class="font-serif text-sm italic text-gray-400">¡Te esperamos para compartir una noche inolvidable!</p>
         <div class="flex justify-center gap-3 text-gold-500">
@@ -213,17 +214,64 @@
 </div>
 
 <script>
-    // Audio Elements References
+    // Variables para controlar los intentos de carga de imágenes (Fallback)
+    let portadaAttempts = 0;
+    let cumpleAttempts = 0;
+
+    // Función inteligente de recuperación para la portada (pág 1)
+    function tryAlternativePortadas(img) {
+        portadaAttempts++;
+        console.log("Error al cargar la portada principal. Intentando alternativa #" + portadaAttempts);
+        
+        if (portadaAttempts === 1) {
+            // Intentar con mayúscula en el formato del archivo ya que GitHub distingue mayúsculas/minúsculas
+            img.src = "portadas%2018%20fatima.JPG";
+        } else if (portadaAttempts === 2) {
+            // Intentar con el enlace directo crudo de tu repositorio en GitHub (con minúscula)
+            img.src = "https://raw.githubusercontent.com/DISENO-Perzonaliza-y-Crea/Mis-18-FATIMA/main/portadas%2018%20fatima.jpg";
+        } else if (portadaAttempts === 3) {
+            // Intentar con el enlace directo crudo de tu repositorio en GitHub (con JPG en mayúscula)
+            img.src = "https://raw.githubusercontent.com/DISENO-Perzonaliza-y-Crea/Mis-18-FATIMA/main/portadas%2018%20fatima.JPG";
+        } else if (portadaAttempts === 4) {
+            // Intentar con espacio crudo en lugar de URL encoded %20
+            img.src = "portadas 18 fatima.jpg";
+        } else if (portadaAttempts === 5) {
+            // Si todo falla, cargar un placeholder bonito con el título para que la web siga siendo operativa
+            img.src = "https://placehold.co/600x600/0B1B3D/FFFFFF?text=FÁTIMA+PORTADA";
+        }
+    }
+
+    // Función inteligente de recuperación para la página 2
+    function tryAlternativeCumple(img) {
+        cumpleAttempts++;
+        console.log("Error al cargar la página 2. Intentando alternativa #" + cumpleAttempts);
+
+        if (cumpleAttempts === 1) {
+            // Intentar con el enlace crudo directo de GitHub (con minúscula)
+            img.src = "https://raw.githubusercontent.com/DISENO-Perzonaliza-y-Crea/Mis-18-FATIMA/main/Cumple%20(01).png";
+        } else if (cumpleAttempts === 2) {
+            // Intentar con el enlace crudo directo de GitHub (con PNG en mayúscula)
+            img.src = "https://raw.githubusercontent.com/DISENO-Perzonaliza-y-Crea/Mis-18-FATIMA/main/Cumple%20(01).PNG";
+        } else if (cumpleAttempts === 3) {
+            // Intentar sin codificación URL en el espacio
+            img.src = "Cumple (01).png";
+        } else if (cumpleAttempts === 4) {
+            // Placeholder de auxilio
+            img.src = "https://placehold.co/600x800/0B1B3D/FFFFFF?text=FÁTIMA+PÁGINA+2";
+        }
+    }
+
+    // Referencias de audio
     const bgMusic = document.getElementById('bg-music');
     const musicWidget = document.getElementById('music-widget');
     const musicIcon = document.getElementById('music-icon');
 
-    // Load elements on initialization
+    // Inicializar cuenta regresiva al cargar la pantalla
     window.onload = function() {
         initCountdown();
     };
 
-    // User interaction required to bypass strict Autoplay policies
+    // Desbloquear audio e iniciar la experiencia interactiva
     function startInvitation() {
         const overlay = document.getElementById('entrance-overlay');
         overlay.classList.add('opacity-0');
@@ -231,19 +279,19 @@
             overlay.classList.add('hidden');
         }, 1000);
         
-        // Expose floating player control
+        // Mostrar widget flotante de música
         musicWidget.classList.remove('hidden');
         
-        // Trigger background track
+        // Intentar reproducción
         bgMusic.play().then(() => {
             updateMusicUI(true);
         }).catch(err => {
-            console.log("Autoplay context pending manual activation: ", err);
+            console.log("El reproductor requiere interacción manual: ", err);
             updateMusicUI(false);
         });
     }
 
-    // Manual Track Controls
+    // Alternar estado de la música (Pausa/Reproducción)
     function toggleMusic() {
         if (bgMusic.paused) {
             bgMusic.play().then(() => {
@@ -255,6 +303,7 @@
         }
     }
 
+    // Actualizar visualmente el botón flotante del reproductor de música
     function updateMusicUI(isPlaying) {
         if (isPlaying) {
             musicIcon.className = "fa-solid fa-pause";
@@ -265,11 +314,12 @@
         }
     }
 
-    // Countdown Engine setup permanently to target Date: July 25, 2026 at 4:00 PM (16:00)
+    // Configuración definitiva de la Cuenta Regresiva: Finaliza el 25 de Julio de 2026 a las 4:00 PM (16:00)
     let countdownInterval;
     function initCountdown() {
         if (countdownInterval) clearInterval(countdownInterval);
         
+        // Fecha límite exacta configurada: 25 de Julio de 2026 a las 16:00 horas
         const targetDate = new Date("2026-07-25T16:00:00").getTime();
 
         function updateTimer() {
